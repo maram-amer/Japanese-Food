@@ -20,7 +20,7 @@ const logOrSign = (page) => {
   var output = page;
   output = output.replace(/{%USERNAME%}/g, " Login or SignUp");
   output = output.replace(/{%LOGINURL%}|{%LIKEURL%}|{%COMMENTURL%}/g, "/login");
-  output = output.replace(/{%METHOD%}/g, "put");
+  output = output.replace(/{%METHOD%}/g, "get");
   return output;
 };
 const loged = (user, page) => {
@@ -29,7 +29,7 @@ const loged = (user, page) => {
   output = output.replace(/{%LOGINURL%}/g, "/aboutuser");
   output = output.replace(/{%LIKEURL%}/g, "/like?id={%ID%}");
   output = output.replace(/{%COMMENTURL%}/g, "/comment?id={%ID%}");
-  output = output.replace(/{%METHOD%}/g, "put");
+  output = output.replace(/{%METHOD%}/g, "post");
   return output;
 };
 exports.logCheck = (user, output) => {
