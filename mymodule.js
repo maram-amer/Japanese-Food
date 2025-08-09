@@ -33,6 +33,7 @@ const loged = (user, page) => {
   output = output.replace(/{%LIKEURL%}/g, "/like?id={%ID%}");
   output = output.replace(/{%COMMENTURL%}/g, "/comment?id={%ID%}");
   output = output.replace(/{%METHOD%}/g, "post");
+  output = output.replace(/{%METHOD%}/g, "post");
   return output;
 };
 exports.logCheck = (user, output) => {
