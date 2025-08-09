@@ -376,7 +376,7 @@
           <p><span class="emoji-left">🏷</span>{%PRICE%}€</p>
         </div>
 
-        <form action="{%LIKEURL%}" method="put">
+        <form action="{%LIKEURL%}" method="{%METHOD%}">
           <input
             type="submit"
             value="❤️ I liked it too ❤️"
@@ -388,7 +388,7 @@
         <h2 class="product__name">comments</h2>
 
         <h3>whats your opinion ? 😊</h3>
-        <form action="{%COMMENTURL%}" method="put">
+        <form action="{%COMMENTURL%}" method="{%METHOD%}">
           <textarea cols="70" rows="2" name="NEWcomment"></textarea>
           <input type="submit" value="comment" />
         </form>

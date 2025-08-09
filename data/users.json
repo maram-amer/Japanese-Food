@@ -1,16 +1,9 @@
 [
   {
     "id": 0,
-    "username": "NewUser01",
-    "email": "user@gamil.com",
-    "password": "user",
-    "likes": [0, 1, 2]
-  },
-  {
-    "id": 1,
     "username": "newUser",
     "email": "NewUser@gmail.com",
-    "password": "123",
-    "likes": [2, 0]
+    "password": "$2b$09$8jA/4S6YMQAYbVI99GjvOeRtGqeY0cmUEVjiUSd88TMXEmnjpHlT2",
+    "likes": []
   }
 ]

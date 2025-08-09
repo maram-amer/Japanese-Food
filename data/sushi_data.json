@@ -3,7 +3,7 @@
     "id": 0,
     "productName": "Fresh Sushi",
     "image": "🍣",
-    "likes": 3,
+    "likes": 1,
     "quantity": "4 pieces",
     "price": "12.00",
     "vege": false,
@@ -34,15 +34,12 @@
     "id": 2,
     "productName": "Grilled Skewers",
     "image": "🍢",
-    "likes": 3,
+    "likes": 1,
     "quantity": "1 stick",
     "price": "7.50",
     "vege": false,
     "description": "Skewers grilled to perfection with marinated meat or tofu, served hot with dipping sauces...",
-    "comments": [
-      { "username": "", "comment": "" },
-      { "username": "newUser", "comment": "i liked it :)" }
-    ]
+    "comments": [{ "username": "", "comment": "" }]
   },
   {
     "id": 3,
