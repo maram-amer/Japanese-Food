@@ -48,9 +48,7 @@ exports.postSignup = async (req, res) => {
     );
     usersobj.push(newUser);
     req.session.user = newUser;
-    fs.writeFile("./data/users.json", JSON.stringify(usersobj), (err) => {
-      "couldnt write";
-    });
+    fs.writeFile("./data/users.json", JSON.stringify(usersobj), () => {});
     res.status(201).redirect("/home");
   } else res.status(409).redirect(`/user/signup?err=1`);
 };
