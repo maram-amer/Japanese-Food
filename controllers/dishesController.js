@@ -35,7 +35,8 @@ exports.getDetails = (req, res) => {
 exports.postLike = (req, res) => {
   const id = req.query.id * 1,
     userid = req.session.user.id;
-  if (!req.session.user.likes.includes(id)) {
+   if (!usersobj[userid]) usersobj.push(req.session.user);
+  if (!usersobj[userid].likes.includes(id)) {
     req.session.user.likes.push(id);
     usersobj[req.session.user.id].likes.push(id);
     dataobj[id].likes++;
